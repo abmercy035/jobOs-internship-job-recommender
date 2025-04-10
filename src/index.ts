@@ -1,6 +1,6 @@
 import express from 'express';
-import jobsRoute from './routes/jobs.ts'
-import usersRoute from './routes/users.ts'
+import jobsRoute from './routes/jobs.js'
+import usersRoute from './routes/users.js'
 
 const app = express();
 const port = 5000;

@@ -1,9 +1,9 @@
-import { matchUserWithJobs } from './../utils/jobMatcher.ts';
+import { matchUserWithJobs } from './../utils/jobMatcher.js';
 import express from "express"
 import { isInValiData } from "validata-jsts";
-import db from "../db/index.ts";
-import { jobsRules } from '../lib/datarules.ts';
-import { jobs as jobsSchema } from './../db/schema.ts';
+import db from "../db/index.js";
+import { jobsRules } from '../lib/datarules.js';
+import { jobs as jobsSchema } from './../db/schema.js';
 import { v4 as uuid } from "uuid";
 
 const jobsRoute = express.Router()
@@ -38,7 +38,7 @@ jobsRoute.post('/jobs', async (req, res) => {
 // Job fetch endpoint for with matching
 jobsRoute.get('/jobs', async (req, res) => {
 	const { userId } = req.body;
-	const validationError = isInValiData(["userId-objectId-err:userId is required"], {userId})
+	const validationError = isInValiData(["userId-objectId-err:userId is required"], { userId })
 	if (validationError) {
 		res.status(400).json({ error: validationError });
 		return;

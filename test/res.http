@@ -1,4 +1,17 @@
 ### Recommend Jobs API Request
+POST https://jobos-internship-job-recommender.onrender.com/api/jobs
+Content-Type: application/json
+
+{
+	"title": "Python Programmer",
+	"description": "Use React.py and Python to build a backend application",
+	"applicationType": "Visit Site",
+	"company": "The menteo",
+	"requiredSkills": ["Python", "React.py", "Dango", "Laravel"],
+	"jobType": "Remote",
+	"experienceLevel": "Intermediate"
+}
+### Recommend Jobs API Request
 POST http://localhost:5000/api/jobs
 Content-Type: application/json
 

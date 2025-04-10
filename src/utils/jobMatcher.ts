@@ -1,5 +1,5 @@
 // Match skills between user and job
-import * as dataType from './../types/interface.ts';
+import * as dataType from './../types/interface.js';
 
 export const matchUserWithJobs = (jobsList: dataType.Job[], user: dataType.User) => {
 	return jobsList
