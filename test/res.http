@@ -1,0 +1,48 @@
+### Recommend Jobs API Request
+POST http://localhost:5000/api/jobs
+Content-Type: application/json
+
+{
+	"title": "Python Programmer",
+	"description": "Use React.py and Python to build a backend application",
+	"applicationType": "Visit Site",
+	"company": "The menteo",
+	"requiredSkills": ["Python", "React.py", "Dango", "Laravel"],
+	"jobType": "Remote",
+	"experienceLevel": "Intermediate"
+}
+
+### Recommend Jobs API Request
+POST http://localhost:5000/api/users
+Content-Type: application/json
+
+{
+	"name": "Joe Ramson",
+	"title": "Javascript developer",
+	"email": "abmercy035@gmail.com",
+	"skills": ["Mongodb", "Javascript", "Css", "React"],
+	"jobType":["Remote"],
+	"experienceLevel": "Mid-level Developer"
+}
+### Recommend Jobs API Request
+GET http://localhost:5000/api/users/40afdd0f-33f5-420b-9c43-0c22376dfbb4 
+Content-Type: application/json
+### Recommend Jobs API Request
+GET http://localhost:5000/recommendations/1
+Content-Type: application/json
+
+{
+	"userId": "12345",
+	"skills": ["JavaScript", "React", "Node.js"],
+	"location": "Remote",
+	"experienceLevel": "Intermediate"
+}
+### Recommend Jobs API Request
+GET http://localhost:5000/api/jobs
+Content-Type: application/json
+
+{
+	"userId": "f98a4645-75c7-4d5d-a86e-8a6d6161c60d",
+	"location": "Remote",
+	"experienceLevel": "Intermediate"
+}

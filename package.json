@@ -1,0 +1,28 @@
+{
+  "name": "jobos-internship-job-recommender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "drizzle:push": "drizzle-kit push:pg"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.41.0",
+    "drizzle-seed": "^0.3.1",
+    "express": "^5.1.0",
+    "pg": "^8.14.1",
+    "uuid": "^11.1.0",
+    "validata-jsts": "^1.0.13"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.30.6"
+  }
+}

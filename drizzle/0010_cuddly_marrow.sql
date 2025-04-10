@@ -1,0 +1,1 @@
+ALTER TABLE "users" RENAME COLUMN "job_type" TO "jobType";
