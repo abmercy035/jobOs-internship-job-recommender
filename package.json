@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-     "build": "tsc",
+    "build": "tsc",
     "db:gen": "npx drizzle-kit generate",
     "db:mig": "npx drizzle-kit migrate",
     "studio": "npx drizzle-kit studio",
@@ -24,6 +24,8 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.1",
-    "drizzle-kit": "^0.30.6"
+    "@types/node": "^22.14.0",
+    "drizzle-kit": "^0.30.6",
+    "ts-node": "^10.9.2"
   }
 }
