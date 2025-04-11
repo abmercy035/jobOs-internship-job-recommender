@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "db:gen": "npx drizzle-kit generate",
-    "db:mig": "npx drizzle-kit migrate",
+    "db:gen": "npx drizzle-kit generate --config=drizzle.config.ts",
+    "db:mig": "npx drizzle-kit migrate --config=drizzle.config.ts",
+    "db:p": "npx drizzle-kit push --config=drizzle.config.ts",
     "studio": "npx drizzle-kit studio",
     "start": "ts-node dist/index.js"
   },
