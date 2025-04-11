@@ -1,10 +1,10 @@
 import express from "express"
-import db from "../db/index.js";
+import db from "../db/index";
 import { eq } from 'drizzle-orm';
-import { users } from '../db/schema.js'; // Your schema with users and jobs
+import { users } from '../db/schema'; // Your schema with users and jobs
 import { v4 as uuid } from "uuid";
 import { isValiData } from "validata-jsts";
-import { userRules } from "../lib/datarules.js";
+import { userRules } from "../lib/datarules";
 
 const usersRoute = express.Router()
 

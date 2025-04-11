@@ -1,9 +1,9 @@
-import { matchUserWithJobs } from './../utils/jobMatcher.js';
+import { matchUserWithJobs } from './../utils/jobMatcher';
 import express from "express"
 import { isInValiData } from "validata-jsts";
-import db from "../db/index.js";
-import { jobsRules } from '../lib/datarules.js';
-import { jobs as jobsSchema } from './../db/schema.js';
+import db from "../db/index";
+import { jobsRules } from '../lib/datarules';
+import { jobs as jobsSchema } from './../db/schema';
 import { v4 as uuid } from "uuid";
 
 const jobsRoute = express.Router()
